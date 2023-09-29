@@ -59,9 +59,28 @@ button:focus {
   padding: 60px 0;
 }
 .container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+/* Desktop screen */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 fieldset {
@@ -234,7 +253,7 @@ fieldset {
 }
 
 .address-img {
-  display: flex;
+  display: none;
   justify-content: center;
   height: 112px;
   margin-bottom: 8px;
@@ -249,12 +268,33 @@ fieldset {
   align-items: center;
 }
 
+/* Tablet */
+
+@media screen and (min-width: 1158px) {
+  .address-img {
+    display: flex;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+
+    border-radius: 4px;
+    width: 264px;
+    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+    background: var(--CLOUD, #f4f4fd);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .address-icons {
   display: block;
   margin: 0% auto;
 }
 
 .advantage-title {
+  text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
   font-size: 20px;
@@ -262,6 +302,13 @@ fieldset {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+/* Desktop */
+@media screen and (max-width: 1158px) {
+  .advantage-title {
+  }
+}
+
 .advantage-text {
   color: var(--c-primari-second);
   font-size: 16px;
@@ -271,7 +318,25 @@ fieldset {
 }
 .advantage-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-direction: column;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    gap: 72px 16px;
+  }
+  .address-list {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .advantage-list {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+  }
 }
 
 /* and advantage-section*/
@@ -610,12 +675,12 @@ fieldset {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*
-.backdrop.is-open {
+
+.is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .modal {
   overflow: auto;
