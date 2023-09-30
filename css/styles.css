@@ -324,20 +324,19 @@ fieldset {
 /* Tablet */
 @media screen and (min-width: 768px) {
   .advantage-list {
-    background-color: #31d0aa;
+    flex-wrap: wrap;
     flex-direction: row;
-
-    justify-content: space-between;
     gap: 72px 16px;
   }
   .address-list {
-    flex-basis: calc((100% - 16px) / 4);
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 /* Desktop */
 @media screen and (min-width: 1158px) {
   .advantage-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
     flex-direction: row;
   }
