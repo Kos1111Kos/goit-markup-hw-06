@@ -351,7 +351,7 @@ fieldset {
 .hero-list {
   gap: 24px;
 }
-
+/* Mobile */
 @media screen and (min-width: 320px) {
   .hero-list {
     display: flex;
@@ -378,6 +378,27 @@ fieldset {
     /* width: calc((100% - 72px) / 4); desktop*/
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .hero-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+  .hero-subtitle-container {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .hero-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    flex-direction: row;
   }
 }
 
