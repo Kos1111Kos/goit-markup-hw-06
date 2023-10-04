@@ -554,6 +554,7 @@ fieldset {
   /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-img {
   position: relative;
   overflow: hidden;
@@ -561,6 +562,13 @@ fieldset {
 .portfolio-pic {
   position: relative;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 1168px) {
+  .portfolio-pic {
+    width: 360;
+    height: 300;
+  }
 }
 
 .porttext {
