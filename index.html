@@ -52,26 +52,74 @@
           </ul>
         </address>
 
-        <button class="header-menu-btn">
+        <button class="header-menu-btn" data-menu-open>
           <svg class="menu-toggle-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-container">
+          <button class="clouse-menu-btn" data-menu-close>
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="nav-mob-list">
+            <li><a href="" class="nav-mob-link"></a></li>
+            <li><a href="" class="nav-mob-link"></a></li>
+            <li><a href="" class="nav-mob-link"></a></li>
+            <li><a href="" class="nav-mob-link"></a></li>
+          </ul>
+          <ul class="nav-cont-list">
+            <li><a href="" class="nav-cont-link"></a></li>
+            <li><a href="" class="nav-cont-link"></a></li>
+          </ul>
+          <ul class="soc-mob-list">
+            <li class="soc-mob-item">
+              <a href="" class="soc-mob-link">
+                <svg class="soc-mob-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mob-item">
+              <a href="" class="soc-mob-link">
+                <svg class="soc-mob-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mob-item">
+              <a href="" class="soc-mob-link">
+                <svg class="soc-mob-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-mob-item">
+              <a href="" class="soc-mob-link">
+                <svg class="soc-mob-icon">
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- section headline 1 -->
-      <!-- <section class="headline-section">
+      <section class="headline-section">
         <div class="container">
           <h1 class="headline-title">Effective Solutions for Your Business</h1>
 
           <button class="headline-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- section subtitle 2 -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
-          
           <h2 class="visually-hidden">Our advantage</h2>
           <ul class="advantage-list">
             <li class="address-list">
@@ -125,7 +173,7 @@
             </li>
           </ul>
         </div>
-      </section> --!>
+      </section>
       <!-- section 3 -->
       <section class="section hero-section">
         <div class="container hero-container">
@@ -133,11 +181,12 @@
           <ul class="hero-list">
             <li class="hero-title-desc">
               <img
-                class="hero-img"
-                src="./images/1mark.jpg"
-                alt="Mark Guerrero"
+                srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x"
+                src="./images/mark.jpg"
+                alt="mark"
                 width="264"
               />
+
               <div class="hero-subtitle-container">
                 <h3 class="hero-subtitle">Mark Guerrero</h3>
                 <p class="hero-text">Product Designerr</p>
@@ -180,11 +229,12 @@
 
             <li class="hero-title-desc">
               <img
-                class="hero-img"
-                src="./images/2tom.jpg"
+                srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x"
+                src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
               />
+
               <div class="hero-subtitle-container">
                 <h3 class="hero-subtitle">Tom Ford</h3>
                 <p class="hero-text">Frontend Developer</p>
@@ -226,11 +276,12 @@
             </li>
             <li class="hero-title-desc">
               <img
-                class="hero-img"
-                src="./images/3camila.jpg"
-                alt="Camila Garcia"
+                srcset="./images/camila.jpg 1x, ./images/camila2x.jpg 2x"
+                src="./images/camila.jpg"
+                alt="camila"
                 width="264"
               />
+
               <div class="hero-subtitle-container">
                 <h3 class="hero-subtitle">Camila Garcia</h3>
                 <p class="hero-text">Marketing</p>
@@ -272,11 +323,12 @@
             </li>
             <li class="hero-title-desc">
               <img
-                class="hero-img"
-                src="./images/4daniel.jpg"
-                alt="Daniel Wilson"
+                srcset="./images/daniel.jpg 1x, ./images/daniel2x.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="daniel"
                 width="264"
               />
+
               <div class="hero-subtitle-container">
                 <h3 class="hero-subtitle">Daniel Wilson</h3>
                 <p class="hero-text">UI Designer</p>
@@ -599,7 +651,6 @@
                     height="300"
                   />
                 </picture>
-                />
 
                 <p class="porttext">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -616,7 +667,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container futer-cont">
         <div class="footer-logo-cont">
           <a class="footer-logo" href="./index.html"
@@ -679,9 +730,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- modal -->
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="close-modal" width="8" height="8">
@@ -764,6 +815,7 @@
           <button class="headline-button">Send</button>
         </form>
       </div>
-    </div>  -->
+    </div>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
