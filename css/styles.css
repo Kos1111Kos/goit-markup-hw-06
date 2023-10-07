@@ -116,6 +116,7 @@ fieldset {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 16px 0;
 }
 
 .logo-accent {
@@ -123,6 +124,25 @@ fieldset {
 }
 .header-menu {
   gap: 40px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header-menu {
+    display: none;
+  }
+  .address-link {
+    display: none;
+  }
+}
+
+.header-menu-btn {
+  display: flex;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background-color: var(--c-background);
 }
 
 .header-decoration.active::after {
